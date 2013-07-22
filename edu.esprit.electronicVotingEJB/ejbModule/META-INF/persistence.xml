@@ -5,6 +5,7 @@
 	<persistence-unit name="edu.esprit.electronicVotingEJB">
 		<jta-data-source>java:/VoteDS</jta-data-source>
 		<class>edu.esprit.electronicVotingEJB.domain.Elector</class>
+		<class>edu.esprit.electronicVotingEJB.domain.Party</class>
 		<properties>
 			<property name="hibernate.hbm2ddl.auto" value="create" />
 		</properties>
