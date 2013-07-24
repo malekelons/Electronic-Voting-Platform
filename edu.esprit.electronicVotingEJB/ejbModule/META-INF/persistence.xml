@@ -6,6 +6,13 @@
 		<jta-data-source>java:/VoteDS</jta-data-source>
 		<class>edu.esprit.electronicVotingEJB.domain.Elector</class>
 		<class>edu.esprit.electronicVotingEJB.domain.Party</class>
+		<class>heritage.H</class>
+		<class>heritage.Z</class>
+		<class>heritage.W</class>
+		<class>edu.esprit.electronicVotingEJB.intership.domain.VoteOffice</class>
+		<class>edu.esprit.electronicVotingEJB.intership.domain.ElectorBis</class>
+		<class>edu.esprit.electronicVotingEJB.intership.domain.LeaderOfParty</class>
+		<class>edu.esprit.electronicVotingEJB.intership.domain.User</class>
 		<properties>
 			<property name="hibernate.hbm2ddl.auto" value="create" />
 		</properties>
