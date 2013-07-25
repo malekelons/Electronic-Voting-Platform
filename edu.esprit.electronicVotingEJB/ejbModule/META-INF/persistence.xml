@@ -6,6 +6,11 @@
 		<jta-data-source>java:/VoteDS</jta-data-source>
 		<class>edu.esprit.electronicVotingEJB.domain.Elector</class>
 		<class>edu.esprit.electronicVotingEJB.domain.Party</class>
+		<class>esprit.entrainement.domain.A</class>
+		<class>esprit.entrainement.domain.B</class>
+		<class>esprit.entrainement.domain.KK</class>
+		<class>esprit.entrainement.domain.K</class>
+		<class>esprit.entrainement.domain.PPPP</class>
 		<properties>
 			<property name="hibernate.hbm2ddl.auto" value="create" />
 		</properties>
