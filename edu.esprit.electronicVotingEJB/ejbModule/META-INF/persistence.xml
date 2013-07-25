@@ -14,6 +14,11 @@
 		<class>edu.esprit.electronicVotingEJB.intership.domain.ElectorBis</class>
 		<class>edu.esprit.electronicVotingEJB.intership.domain.LeaderOfParty</class>
 		<class>edu.esprit.electronicVotingEJB.intership.domain.User</class>
+		<class>esprit.entrainement.domain.PPPP</class>
+		<class>esprit.entrainement.domain.B</class>
+		<class>esprit.entrainement.domain.A</class>
+		<class>esprit.entrainement.domain.KK</class>
+		<class>esprit.entrainement.domain.K</class>
 		<properties>
 			<property name="hibernate.hbm2ddl.auto" value="create" />
 		</properties>
