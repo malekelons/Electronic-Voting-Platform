@@ -1,0 +1,40 @@
+	<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+	 template="/template/melekTemplate.xhtml">
+			<ui:define name="pageTitle">list</ui:define>
+		
+			<ui:define name="pageContent">
+				
+				<h:form>
+			<h:dataTable border="1" value="#{electorCtr.dataModel}" var="u">
+				<h:column id="column1">
+					<f:facet name="header">
+						<h:outputText value="login"></h:outputText>
+					</f:facet>
+					<h:outputText value="#{u.login}" />
+				</h:column>
+				<h:column id="column2">
+					<f:facet name="header">
+						<h:outputText value="pwd"></h:outputText>
+										</f:facet>
+										<h:outputText value="#{u.password}" />
+				</h:column>
+				<h:column id="column3">
+					<f:facet name="header">
+						<h:outputText value="action"></h:outputText>
+										</f:facet>
+										<h:commandButton value="delete" action="#{electorCtr.doDeleteUser}" />
+				</h:column>
+			</h:dataTable>
+
+
+
+		</h:form>
+				
+				
+				
+				
+			</ui:define>
+	</ui:composition>
