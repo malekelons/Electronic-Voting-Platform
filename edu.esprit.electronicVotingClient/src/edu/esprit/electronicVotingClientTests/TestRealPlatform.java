@@ -40,8 +40,8 @@ public class TestRealPlatform {
 			electorBis3.setId(11);
 			electorBis3.setFirstNameElector("elector");
 
-			// proxy.addUser(electorBis3);
-			// proxy.addUser(leaderOfParty);
+			 proxy.addUser(electorBis3);
+			 proxy.addUser(leaderOfParty);
 
 			List<User> users = proxy.findAllUsers();
 			for (User u : users) {

@@ -19,5 +19,6 @@ public interface ManagementServicesRemote {
 	public void addUser(User user);
 	
 	public List<User> findAllUsers();
-
+    
+	public User login(String login , String pwd);
 }

@@ -5,6 +5,7 @@ import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
 
 import edu.esprit.electronicVotingEJB.intership.domain.ElectorBis;
 import edu.esprit.electronicVotingEJB.intership.domain.User;
@@ -79,6 +80,27 @@ public class ManagementServices implements ManagementServicesRemote,
 
 		return entityManager.createQuery("select u from User u")
 				.getResultList();
+	}
+
+	@Override
+	public User login(String login, String pwd) {
+		User user;
+		String jpql = "select u from User u where  u.login='" + login
+				+ "'and u.password='" + pwd + "'";
+		Query query = entityManager.createQuery(jpql);
+		try {
+			user = (User) query.getSingleResult();
+
+		} catch (Exception e) {
+			return null;
+		}
+		return user;
+	}
+
+	@Override
+	public void deleteUser(int id) {
+		entityManager.remove(entityManager.find(User.class, id));
+
 	}
 
 }
